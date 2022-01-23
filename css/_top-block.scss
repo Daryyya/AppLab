@@ -1,0 +1,29 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 205px;
+	width: 100vw;
+	padding: 129px 0 18px;
+
+	&__container {
+		max-width: 1230px;
+		padding: 0 30px;
+		margin: 0 auto;
+		height: 100%;
+	}
+}
+
+.hero {
+	height: calc(100vh - 205px);
+
+	&__container {
+		max-width: 1130px;
+		padding: 0 30px 16px;
+		margin: 205px auto 0;
+		height: 100%;
+		position: relative;
+		top: 0;
+		left: 25px;
+	}
+}

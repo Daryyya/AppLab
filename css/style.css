@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -165,6 +170,36 @@ template {
 
 [hidden] {
   display: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 205px;
+  width: 100vw;
+  padding: 129px 0 18px;
+}
+
+.header__container {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.hero {
+  height: calc(100vh - 205px);
+}
+
+.hero__container {
+  max-width: 1130px;
+  padding: 0 30px 16px;
+  margin: 205px auto 0;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 25px;
 }
 
 :root {
