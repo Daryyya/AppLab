@@ -35,6 +35,8 @@ pre {
 
 a {
   background-color: transparent;
+  color: inherit;
+  text-decoration: none;
 }
 
 abbr[title] {
@@ -176,9 +178,9 @@ template {
   position: fixed;
   top: 0;
   left: 0;
-  height: 205px;
+  height: 165px;
   width: 100vw;
-  padding: 129px 0 18px;
+  padding: 90px 0 18px;
 }
 
 .header__container {
@@ -186,6 +188,42 @@ template {
   padding: 0 30px;
   margin: 0 auto;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav {
+  margin-right: 35px;
+}
+
+.header__nav a {
+  margin: 0 20px;
+}
+
+.main-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-logo img {
+  margin-top: 2px;
 }
 
 .hero {
@@ -195,7 +233,7 @@ template {
 .hero__container {
   max-width: 1130px;
   padding: 0 30px 16px;
-  margin: 205px auto 0;
+  margin: 165px auto 0;
   height: 100%;
   position: relative;
   top: 0;
