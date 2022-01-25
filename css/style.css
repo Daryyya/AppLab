@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -174,20 +175,33 @@ template {
   display: none;
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 165px;
-  width: 100vw;
-  padding: 90px 0 18px;
+.top-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
 }
 
-.header__container {
+.container {
   max-width: 1230px;
   padding: 0 30px;
   margin: 0 auto;
-  height: 100%;
+}
+
+.btn {
+  /* для всех кнопок */
+}
+
+.header {
+  height: 100px;
+  padding: 50px 0px 0px 0px;
+}
+
+.header__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,10 +210,25 @@ template {
           justify-content: space-between;
 }
 
+.header__logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 117px;
+          flex: 0 0 117px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo img {
+  margin: 2px 0px 0px 0px;
+}
+
 .header__menu {
+  /* flex: 1 1 auto; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* justify-content: space-between; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -213,31 +242,39 @@ template {
   margin: 0 20px;
 }
 
-.main-logo {
+.hero {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.hero__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.main-logo img {
-  margin-top: 2px;
+.hero__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.hero {
-  height: calc(100vh - 205px);
+.hero__title {
+  color: #242F51;
+  font-size: 60px;
+  font-weight: 700;
 }
 
-.hero__container {
-  max-width: 1130px;
-  padding: 0 30px 16px;
-  margin: 165px auto 0;
-  height: 100%;
-  position: relative;
-  top: 0;
-  left: 25px;
+.hero__text {
+  color: #616368;
+  font-size: 18px;
 }
 
 :root {
