@@ -1,0 +1,44 @@
+.content-block {
+
+	
+}
+.companies {
+	margin: 0 auto;
+	width: 934px;
+
+
+		
+		// .companies__title
+
+		&__title {
+			color: #242F51;
+			font-size: 16px;
+			text-align: center;
+			margin-top: 128px;
+			margin-bottom: 44px;
+		}
+
+		// .companies__row
+
+		&__row {
+			
+			/* display: flex; */
+		}
+
+		
+
+		&__body {
+			
+		
+			display: flex;
+			justify-content: space-between;
+			
+		}
+
+		// .companies__logo
+
+		&__logo {
+		}
+}
+
+

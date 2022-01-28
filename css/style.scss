@@ -1,7 +1,21 @@
 @import "_null";
 @import "_top-block";
+@import "_content-block";
 
 :root {
 	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	max-width: 1230px;
+	padding: 0 30px;
+	margin: 0 auto;
+} 
+
+.btn {
+	color: #ffffff;
+	font-size: 16px;
+	background-color: blue;
+	border-radius: 18px;/* для всех кнопок */
 }
 

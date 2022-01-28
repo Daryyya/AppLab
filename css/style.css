@@ -186,20 +186,6 @@ template {
   height: 100vh;
 }
 
-.container {
-  max-width: 1230px;
-  padding: 0 30px;
-  margin: 0 auto;
-}
-
-.btn {
-  color: #ffffff;
-  font-size: 16px;
-  background-color: blue;
-  border-radius: 18px;
-  /* для всех кнопок */
-}
-
 .header {
   height: 100px;
   padding: 50px 0px 0px 0px;
@@ -282,6 +268,50 @@ template {
   font-size: 18px;
 }
 
+.bottom-background {
+  position: absolute;
+}
+
+.companies {
+  margin: 0 auto;
+  width: 934px;
+}
+
+.companies__title {
+  color: #242F51;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 128px;
+  margin-bottom: 44px;
+}
+
+.companies__row {
+  /* display: flex; */
+}
+
+.companies__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 :root {
   font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.btn {
+  color: #ffffff;
+  font-size: 16px;
+  background-color: blue;
+  border-radius: 18px;
+  /* для всех кнопок */
 }
