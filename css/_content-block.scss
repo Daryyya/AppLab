@@ -41,4 +41,72 @@
 		}
 }
 
+.feat {
+
+	// .feat__body
+
+	&__body {
+		max-width: 1121px;
+		margin: 0 auto;
+		margin-top: 151px;
+		display: flex;
+	}
+
+	// .feat__phone
+
+	&__phone {
+	}
+
+	// .feat__info
+
+	&__info {
+		
+	}
+
+	// .feat__title
+
+	&__title {
+		color: #242F51;
+		font-size: 36px;
+		margin: 67px 129px 28px 12px;
+	}
+
+	// .feat__subtitle
+
+	&__subtitle {
+		color: #616368;
+		font-size: 16px;
+		margin-bottom: 92px;
+	}
+
+	// .feat__row
+
+	&__row {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		
+		
+	}
+
+	// .feat__element
+
+	&__element {
+		display: flex;
+		
+		
+	}
+
+	// .feat__img
+
+	&__img {
+	}
+
+	// .feat__text
+
+	&__text {
+	}
+}
+
+
 

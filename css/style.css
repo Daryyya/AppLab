@@ -298,6 +298,46 @@ template {
           justify-content: space-between;
 }
 
+.feat__body {
+  max-width: 1121px;
+  margin: 0 auto;
+  margin-top: 151px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feat__title {
+  color: #242F51;
+  font-size: 36px;
+  margin: 67px 129px 28px 12px;
+}
+
+.feat__subtitle {
+  color: #616368;
+  font-size: 16px;
+  margin-bottom: 92px;
+}
+
+.feat__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feat__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 :root {
   font-family: 'Poppins', sans-serif;
 }
