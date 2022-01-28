@@ -11,7 +11,10 @@
 } 
 
 .btn {
-	/* для всех кнопок */
+	color: #ffffff;
+	font-size: 16px;
+	background-color: blue;
+	border-radius: 18px;/* для всех кнопок */
 }
 
 
@@ -53,6 +56,7 @@
 }
 
 .hero {
+	
 	flex: 1 1 auto;
 
 	&__row {
@@ -62,7 +66,7 @@
 	&__body {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: center;
 	}
 
 	&__img {
@@ -86,4 +90,6 @@
 
 
 }
-
+.bottom-backgraund {
+	
+}

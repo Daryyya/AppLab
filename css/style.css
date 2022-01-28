@@ -193,6 +193,10 @@ template {
 }
 
 .btn {
+  color: #ffffff;
+  font-size: 16px;
+  background-color: blue;
+  border-radius: 18px;
   /* для всех кнопок */
 }
 
@@ -262,8 +266,9 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hero__title {
