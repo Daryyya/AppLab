@@ -8,14 +8,34 @@
 
 .container {
 	max-width: 1230px;
+	
 	padding: 0 30px;
 	margin: 0 auto;
 } 
 
+@media (max-width: 960px) {
+	.container {
+		width: 700px
+	}
+}
+@media (max-width: 760px) {
+	.container {
+		width: 500px
+	}
+}
+
+
 .btn {
+	display: flex;
 	color: #ffffff;
 	font-size: 16px;
-	background-color: blue;
-	border-radius: 18px;/* для всех кнопок */
+	font-weight: 700;
+	background: blue;
+	border-radius: 28.5px;
+	align-items: center;
+	width: 170px;
+	height: 57px;
+	justify-content: center;
+	/* для всех кнопок */
 }
 
