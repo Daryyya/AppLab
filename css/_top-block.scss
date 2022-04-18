@@ -1,29 +1,120 @@
-.header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 205px;
-	width: 100vw;
-	padding: 129px 0 18px;
+.top-block {
+	display: flex;
+	flex-direction: column;
+	
+	 min-height: 100vh;
+	position: relative;
+}
 
-	&__container {
-		max-width: 1230px;
-		padding: 0 30px;
-		margin: 0 auto;
-		height: 100%;
+.header {
+	height: 150px;
+	padding: 93px 0px 0px 0px;
+	
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		flex: 0 0 117px;
+		
+		
+	
+		img {
+			margin: 2px 0px 0px 0px;
+		}
+		@media (max-width: 1230px) {
+			img {object-position: left;}
+		   
+	   }
+
+		
+	}
+
+	
+
+	&__menu {
+		/* flex: 1 1 auto; */
+		display: flex;
+		/* justify-content: space-between; */
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&__nav {
+		margin-right: 35px;
+			a {
+				color: #242f51;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: (44/16)*100%;
+				margin: 0 20px;
+			}
+	}
+
+	&__btn {
+		
 	}
 }
 
 .hero {
-	height: calc(100vh - 205px);
+	margin: 30px 0px;
+	
+	flex: 1 1 auto;
 
-	&__container {
-		max-width: 1130px;
-		padding: 0 30px 16px;
-		margin: 205px auto 0;
-		height: 100%;
-		position: relative;
-		top: 0;
-		left: 25px;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 550px;
+		
+	}
+
+	&__img {
+		padding: 0px 0px 25px 0px;
+	}
+
+	&__title {
+		color: #242F51;
+		font-size: 60px;
+		font-weight: 700;padding: 0px 0px 25px 0px;
+	}
+
+	&__text {
+		color: #616368;
+		font-size: 18px;
+		padding: 0px 0px 25px 0px;
+	}
+
+	&__link {
+		display: inline-flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 350px;
+		a {
+		
+		}
+	}
+
+
+}
+.bottom-background {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+
+	img {
+		
+		height: 240px;
+	width: 100%;
 	}
 }
