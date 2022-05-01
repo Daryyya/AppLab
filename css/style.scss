@@ -4,27 +4,21 @@
 @import "_content-block";
 
 :root {
+	--container-gutter: 30px;
+
 	font-family: 'Poppins', sans-serif;
+
+	@media (max-width: 760px) {
+		--container-gutter: 20px;
+	}
 }
 
 .container {
 	max-width: 1230px;
 	
-	padding: 0 30px;
+	padding: 0 var(--container-gutter);
 	margin: 0 auto;
-} 
-
-@media (max-width: 960px) {
-	.container {
-		width: 700px
-	}
 }
-@media (max-width: 760px) {
-	.container {
-		width: 500px
-	}
-}
-
 
 .btn {
 	display: flex;
@@ -34,8 +28,7 @@
 	background: blue;
 	border-radius: 28.5px;
 	align-items: center;
-	width: 170px;
-	height: 57px;
+	padding: 25px 35px;
 	justify-content: center;
 
 	@media (max-width: 991.98) {
@@ -46,5 +39,10 @@
 		justify-content: center;
 	}
 	/* для всех кнопок */
+
+	@media (max-width: 760px) {
+		padding: 16px 24px;
+		font-size: 14px;
+	}
 }
 
