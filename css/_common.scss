@@ -1,0 +1,14 @@
+.hidden-up-md {
+	@media (min-width: 991.98px) {
+		display: none;
+	}
+}
+
+.hidden-down-md {
+	@media (max-width: 991.98px) {
+		display: none;
+	}
+}
+
+// sm - 768
+// md - 991
